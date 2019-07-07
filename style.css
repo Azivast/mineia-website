@@ -1,0 +1,21 @@
+body{
+    margin: 0px;
+    color:white;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: black;
+}
+.page-header-navigation {
+    display: inherit;
+}
+
+
+.page-header-logo {
+    display: inherit;
+    align-items: center;
+    height: 35px;
+}
