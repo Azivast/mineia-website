@@ -20,9 +20,21 @@ body{
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly !important;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .button {
     background: #ff8000;
     border: 2px solid #ff8000;
@@ -38,5 +50,11 @@ body{
 }
 
 #welcome-card {
+    background-color:black;
+}
+#server-card {
     color:black;
+}
+.image {
+    height: 220px;
 }
