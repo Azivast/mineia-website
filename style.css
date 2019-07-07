@@ -10,12 +10,33 @@ body{
     background: #ff8000;
 }
 .page-header-navigation {
-
 }
-
-
 .page-header-logo {
     display: inherit;
     align-items: center;
     height: 35px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.button {
+    background: #ff8000;
+    border: 2px solid #ff8000;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    transition: transform .2s;
+}
+.button:hover {
+    transform: scale(1.1);
+}
+
+#welcome-card {
+    color:black;
 }
