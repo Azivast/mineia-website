@@ -14,6 +14,7 @@ body {
 }
 .page-header-navigation a {
     margin-left: 1rem;
+    color: #fefefe;
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -57,7 +58,14 @@ body {
     transform: scale(1.1);
 }
 
-#welcome-card {
+.page-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: 0px auto;
+}
+
+.banner {
     background-color:black;
 }
 #server-card {
