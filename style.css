@@ -44,6 +44,9 @@ body {
     align-items: center;
     text-align: center;
 }
+.flex-column.one-third {
+    flex-basis: calc(100% / 3);
+}
 
 .button {
     background: #ff8000;
