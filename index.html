@@ -1,53 +1,72 @@
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
+        <meta content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no, viewport-fit=cover" name="viewport" />
+
         <title>Mineia</title>
-        <link rel="stylesheet" type="text/css" href=./style.css>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap">
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Corporation",
+                "name": "Mineia",
+                "alternateName": "Mineia",
+                "url": "https://www.mineia.com",
+                "logo": "https://www.mineia.com/logo.png",
+                "sameAs": []
+            }
+        </script>
     </head>
     <body>
         <header class="page-header">
             <img class="page-header-logo" src="logo.png" alt="MINEIA">
         
             <div class="page-header-navigation">
-                <a>HEM</a>
-                <a>REGLER</a>
-                <a>WIKI</a>
-                <a>KONTROLLPANEL</a>
+                <a>Hem</a>
+                <a>Regler</a>
+                <a>Wiki</a>
+                <a>Kontrolpanel</a>
             </div>
         </header>
 
 
-        <div id="welcome-card" class="card">
+        <div class="card banner">
             <div class="flex-column">
                 <h1>MINEIA</h1>
                 <h3>En svensk Minecraft-server!</h3>
                 <button class="button" type="button" onclick="">IP: PLAY.MINEIA.SE</button>
             </div>
             <div class="flex-row">
-                <div class="flex-column">
+                <div class="flex-column one-third">
                     <img class="page-header-logo" src="logo.png" alt="TEMP">
                     <p>Här finns inga gränser, inga plots du måste följa. På denna servern får spelarna bestämma!</p>
                 </div>
-                <div class="flex-column">
+                <div class="flex-column one-third">
                     <img class="page-header-logo" src="logo.png" alt="TEMP">
                     <p>Hn extern karta gör det möjligt att få en överblick över världen och spelare online i realtid!</p>
                 </div>
-                <div class="flex-column">
+                <div class="flex-column one-third">
                     <img class="page-header-logo" src="logo.png" alt="TEMP">
                     <p>Med Paper har servern alla fördelar från Spigot. Men med ytterligare fokus på spelarupplevelsen!</p>
                 </div>
             </div>
         </div>
 
-        <div id="server-card" class="card">
-            <div class="flex-column">
-                <h2>SERVERN</h2>
-                <p>Mineia är en svensk minecraft survival server. Servern är semi-vanilla och kör senaste minecraft versionen. Kolla inservern en stund och kör spleef, slåss mot monster,minea, bygg och ha kul!</p>
-            </div>
-            <div class="flex-row">
-                <img class="image" src="ericsstad.png" alt="TEMP">
-                <img class="image" src="erindor.png" alt="TEMP">
-                <img class="image" src="andelonde.jpg" alt="TEMP">
+        <div class="page-content">
+            <div id="server-card" class="card">
+                <div class="flex-column">
+                    <h2>SERVERN</h2>
+                    <p>Mineia är en svensk minecraft survival server. Servern är semi-vanilla och kör senaste minecraft versionen. Kolla inservern en stund och kör spleef, slåss mot monster,minea, bygg och ha kul!</p>
+                </div>
+                <div class="flex-row">
+                    <img class="image" src="ericsstad.png" alt="TEMP">
+                    <img class="image" src="erindor.png" alt="TEMP">
+                    <img class="image" src="andelonde.jpg" alt="TEMP">
+                </div>
             </div>
         </div>
     </body>

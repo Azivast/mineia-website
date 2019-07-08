@@ -1,6 +1,7 @@
-body{
+body {
     margin: 0px;
-    color:white;
+    font-family: 'Open Sans', sans-serif;
+    color: #fefefe;
 }
 .page-header {
     display: flex;
@@ -10,6 +11,15 @@ body{
     background: #ff8000;
 }
 .page-header-navigation {
+}
+.page-header-navigation a {
+    margin-left: 1rem;
+    color: #fefefe;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.page-header-navigation a:hover {
+    text-decoration: underline;
 }
 .page-header-logo {
     display: inherit;
@@ -34,22 +44,31 @@ body{
     align-items: center;
     text-align: center;
 }
+.flex-column.one-third {
+    flex-basis: calc(100% / 3);
+}
 
 .button {
     background: #ff8000;
     border: 2px solid #ff8000;
     border-radius: 5px;
     font-size: 20px;
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 1rem 2rem;
     transition: transform .2s;
+    cursor: pointer;
 }
 .button:hover {
     transform: scale(1.1);
 }
 
-#welcome-card {
+.page-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: 0px auto;
+}
+
+.banner {
     background-color:black;
 }
 #server-card {
