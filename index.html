@@ -15,58 +15,72 @@
                 "@type": "Corporation",
                 "name": "Mineia",
                 "alternateName": "Mineia",
-                "url": "https://www.mineia.com",
-                "logo": "https://www.mineia.com/logo.png",
+                "url": "http://www.mineia.se",
+                "logo": "http://www.mineia.se/logo.png",
                 "sameAs": []
             }
         </script>
     </head>
     <body>
-        <header class="page-header">
-            <img class="page-header-logo" src="logo.png" alt="MINEIA">
-        
-            <div class="page-header-navigation">
-                <a>Hem</a>
-                <a>Regler</a>
-                <a>Wiki</a>
-                <a>Kontrolpanel</a>
+        <header class="navbar">
+            <div class="navbar-navigation">
+                <a href="#Hem">Hem</a>
+                <a href="#Info">Info</a>
+                <a href="#Regler">Regler</a>
+                <a href="/karta/">Karta</a>
+                <a href="https://mineia.fandom.com/sv/">Wiki</a>
             </div>
         </header>
 
 
-        <div class="card banner">
-            <div class="flex-column">
-                <h1>MINEIA</h1>
-                <h3>En svensk Minecraft-server!</h3>
-                <button class="button" type="button" onclick="">IP: PLAY.MINEIA.SE</button>
-            </div>
-            <div class="flex-row">
-                <div class="flex-column one-third">
-                    <img class="page-header-logo" src="logo.png" alt="TEMP">
-                    <p>Här finns inga gränser, inga plots du måste följa. På denna servern får spelarna bestämma!</p>
-                </div>
-                <div class="flex-column one-third">
-                    <img class="page-header-logo" src="logo.png" alt="TEMP">
-                    <p>Hn extern karta gör det möjligt att få en överblick över världen och spelare online i realtid!</p>
-                </div>
-                <div class="flex-column one-third">
-                    <img class="page-header-logo" src="logo.png" alt="TEMP">
-                    <p>Med Paper har servern alla fördelar från Spigot. Men med ytterligare fokus på spelarupplevelsen!</p>
-                </div>
+        <div id="Hem" class="page">
+            <div class="content">
+                <h2>Välkommen till</h2>
+                <h1>Mineia</h1>
+                <img class="logo" src="logo.png" alt="Mineia">
+                <br>
+                <p>Mineia är en survival minecraft server. Servern är vanilla och whitelistad och har funnits utan map-resets sedan 2013.</p>
+                <p>Du kan ansluta med följande IP:</p>
+                <b>play.mineia.se</b>
             </div>
         </div>
 
-        <div class="page-content">
-            <div id="server-card" class="card">
-                <div class="flex-column">
-                    <h2>SERVERN</h2>
-                    <p>Mineia är en svensk minecraft survival server. Servern är semi-vanilla och kör senaste minecraft versionen. Kolla inservern en stund och kör spleef, slåss mot monster,minea, bygg och ha kul!</p>
-                </div>
-                <div class="flex-row">
-                    <img class="image" src="ericsstad.png" alt="TEMP">
-                    <img class="image" src="erindor.png" alt="TEMP">
-                    <img class="image" src="andelonde.jpg" alt="TEMP">
-                </div>
+        <div id="Info" class="page">
+            <div class="content">
+                <h2>Info</h2>
+                <br>
+                <p id="ålder">XX</p>
+                <script type="text/javascript">
+                    function ålderIMånader() 
+                    {
+
+                    var diff =(new Date() - new Date(2013,06,13)) / 1000;
+                    diff /= (60 * 60 * 24 * 7 * 4);
+                    return Math.abs(Math.round(diff));
+                    }
+
+                    document.getElementById("ålder").innerHTML = "Världen är " +ålderIMånader() + " månader gammal.";
+                </script>
+                <p>Totalt tar världen upp 37 GB. (2021-03-18)</p>
+
+                <p>Intresserad av att veta mer? Varför inte kolla in wikin!</p>
+                
+                <p>Frågor eller funderingar? Gå med i vår discord:</p>
+                <a href="https://discord.gg/EReanmQG35">https://discord.gg/EReanmQG35</a><br>
+            </div>
+        </div>
+
+        <div id="Regler" class="page">
+            <div class="content">
+                <h2>Regler</h2>
+                <br>
+                <p>Regler kommer kanske någon gång i framtiden.</p>
+            </div>
+        </div>
+
+        <div id="Karta" class="page">
+            <div class="content">
+                <iframe src="http://mineia.se/karta/" title="Karta"></iframe> 
             </div>
         </div>
     </body>

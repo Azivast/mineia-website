@@ -1,79 +1,120 @@
 body {
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
-    color: #fefefe;
-}
-.page-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background: #ff8000;
-}
-.page-header-navigation {
-}
-.page-header-navigation a {
-    margin-left: 1rem;
-    color: #fefefe;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-.page-header-navigation a:hover {
-    text-decoration: underline;
-}
-.page-header-logo {
-    display: inherit;
-    align-items: center;
-    height: 35px;
+    color: white;
+    background: black;
+    text-align: center;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
+.navbar {
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly !important;
+.navbar-navigation {
+    position: relative;
+    z-index: 1;
+    word-spacing: 20px;
 }
-.flex-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.flex-column.one-third {
-    flex-basis: calc(100% / 3);
-}
-
-.button {
-    background: #ff8000;
-    border: 2px solid #ff8000;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 1rem 2rem;
-    transition: transform .2s;
+.navbar-navigation a {
+    text-transform: uppercase;
+    font-weight: bold;
     cursor: pointer;
 }
-.button:hover {
-    transform: scale(1.1);
-}
 
-.page-content {
+.page {
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    max-width: 1024px;
-    margin: 0px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content {
+    margin: 25vh;
+    max-width: 500px;
+    min-width: 300px;
+}
+#Hem {
+    background-image: url("./bg.png"); 
+    transition: all .3s ease-in-out;
+    transform: translateY(0%);
+}
+#Hem:target {
+    background-image: url("./bg.png");  
+    transition: all .3s ease-in-out;
+    transform: translateY(0%);
 }
 
-.banner {
-    background-color:black;
+#Info { 
+    background-image: url("./bg2.png");
+    transition: all .2s ease-in-out;
+    transform: translateY(-100%);
 }
-#server-card {
-    color:black;
+#Info:target { 
+    background-image: url("./bg2.png");
+    transition: all .4s ease-in-out;
+    transform: translateY(0%);
 }
-.image {
-    height: 220px;
+#Regler { 
+    background-image: url("./bg3.png");
+    transition: all .2s ease-in-out;
+    transform: translateY(-100%);
+}
+#Regler:target { 
+    background-image: url("./bg3.png");
+    transition: all .4s ease-in-out;
+    transform: translateY(0%);
+}
+#Karta { 
+    background-image: url("./bg.png");
+    transition: all .2s ease-in-out;
+    transform: translateY(-105%);
+}
+#Karta:target { 
+    background-image: url("./bg.png");
+    transition: all .4s ease-in-out;
+    transform: translateY(0%);
+}
+iframe {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 99.7%;
+    margin: 0px;
+    overflow: hidden !important;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.logo {
+    height: 35px;
+    width: auto;
+    margin: 20px
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 90px;
+    margin: 0px;
+}
+h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 10px;
 }
