@@ -45,6 +45,7 @@ body {
     background-image: url("./bg.png"); 
     transition: all .3s ease-in-out;
     transform: translateY(0%);
+
 }
 #Hem:target {
     background-image: url("./bg.png");  
@@ -56,31 +57,38 @@ body {
     background-image: url("./bg2.png");
     transition: all .2s ease-in-out;
     transform: translateY(-100%);
+    visibility: hidden;
 }
 #Info:target { 
     background-image: url("./bg2.png");
     transition: all .4s ease-in-out;
     transform: translateY(0%);
+    visibility:visible;
 }
 #Regler { 
     background-image: url("./bg3.png");
     transition: all .2s ease-in-out;
     transform: translateY(-100%);
+    visibility: hidden;
 }
 #Regler:target { 
     background-image: url("./bg3.png");
     transition: all .4s ease-in-out;
     transform: translateY(0%);
+    visibility:visible;
+
 }
 #Karta { 
     background-image: url("./bg.png");
     transition: all .2s ease-in-out;
     transform: translateY(-105%);
+    visibility: hidden;
 }
 #Karta:target { 
     background-image: url("./bg.png");
     transition: all .4s ease-in-out;
     transform: translateY(0%);
+    visibility:visible;
 }
 iframe {
     position: absolute;
@@ -123,7 +131,8 @@ h3 {
     text-align: left;
 }
 ul {
-    text-align: left;
+    text-align:unset;
     line-height: 45px;
     list-style: none;
+    padding:0px;
 }
